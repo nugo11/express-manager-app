@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  width: calc(100% - 20px);
+  background-color: #222;
+  color: white;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+}
+
+body > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.list {
+  border: 1px solid rgba(255, 255, 255, 0.169);
+  border-radius: 5px;
+  width: 19%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.list ul li {
+  padding: 10px;
+}
+
+.buts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buts a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  opacity: 0.7;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.buts a:nth-child(1) {
+  background-color: rgb(0, 172, 0);
+}
+.buts a:nth-child(2) {
+  background-color: rgb(225, 0, 0);
+}
+.buts a:nth-child(3) {
+  background-color: rgb(13, 83, 111);
+}
+.buts a:nth-child(1):hover,
+.buts a:nth-child(2):hover,
+.buts a:nth-child(3):hover {
+  opacity: 1;
+}
+
+button {
+  background-color: rgb(16, 142, 2);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  width: 20%;
+  border-radius: 5px;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+form div {
+  width: 270px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input {
+  outline: none;
+  background-color: #ffffff25;
+  color: white;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.242);
+  border-radius: 5px;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.671);
+}

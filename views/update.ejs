@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h1><%= title %></h1>
+  <form action="/update/<%= id %>" method="POST">
+    <div>
+      <label for="id">id:</label>
+      <input type="number" id="id" name="id" value="<%= id %>" style="background-color: rgba(0, 128, 0, 0.276); color: rgba(255, 255, 255, 0.491);" required disabled/>
+    </div>
+    <div>
+      <label for="title">title:</label>
+      <input id="title" name="title" placeholder="<%= itemTitle %>" required />
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" placeholder="<%= price %>" name="price" required />
+    </div>
+    <button type="submit">Update Item</button>
+  </form>
+</body>
+</html>
