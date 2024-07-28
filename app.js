@@ -22,7 +22,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.get("/:id", async (req, res) => {
+app.get("/detail/:id", async (req, res) => {
   try {
     const json = await fs.readFile("items.json", "utf-8");
     const data = JSON.parse(json);
